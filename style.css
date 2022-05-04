@@ -1,0 +1,56 @@
+
+body {
+ background: #fafafa;
+ box-sizing: border-box;
+}
+
+.dino {
+  
+   width: 60px;
+   height: 60px; 
+   background-image: url(/src/img/dino.png);
+   position: absolute ;
+   bottom: 0;
+}
+
+.cactus {
+   position: absolute;
+   width: 60px;
+   height: 60px; 
+   bottom: 0;
+   background-image: url(./src/img/cactus.png);
+}
+
+.game-over {
+   text-align: center;
+   color: #666;
+   margin-top: 50px 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes bg-animation {
+   from {
+      background-position: 40000%;
+   }
+   to {
+      background-position: 0%;
+   }
+}
+
+.background {
+   height: 200px;
+   width: 400px;
+   margin: auto;
+   position: relative;
+   bottom: 0px;
+   overflow: hidden;
+   background-size: auto;
+   background-image: url(./src/img/background.png);
+   background-repeat: repeat-x;
+   animation: bg-animation 500s infinite linear;
+   width: 200%;
+   height: 200px;
+  
+}
+
+
